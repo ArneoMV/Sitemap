@@ -31,22 +31,43 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 body {
 	font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
 	background: white;
-	color: black;
+	color: #343a40;
 	font-size: 16px;
 	line-height: 1;
-	padding: 2em;
-	width: 100vw;
-	height: auto;
-	overflow-x: scroll;
-	/* transform: scale(0.8); */
-}
-.sitemap {
-	margin: 0 0 2em 0;
+	/* margin: 2em; */
 	width: 100%;
 	height: auto;
-	overflow-x: scroll;
-
+	overflow-x: hidden;
 }
+.sitemap {
+	width: 100vw;
+	height: auto;
+	padding: 2em;
+}
+nav {
+	padding-bottom: 3em;
+}
+
+/* ------------------------------------------------------------
+	Drag to scroll
+------------------------------------------------------------ */
+
+.items {
+	width: 100vw;
+	height: 100vw;
+	overflow-x: scroll;
+	overflow-y: scroll;
+	user-select: none;
+	cursor: pointer;
+	transition: all 0.2s;
+	will-change: transform;
+	position: relative;
+  }
+  
+  .items.active {
+	cursor: grabbing;
+	cursor: -webkit-grabbing;
+  }
 
 /* ------------------------------------------------------------
 	Page Styles
@@ -91,14 +112,15 @@ body {
 	font-size: .9375em;
 	font-weight: bold;
 	color: white;
-	background: #0090ff;
+	background: #2977ff;
 	text-shadow: 0 0 10px rgba(0,0,0,.1);
 	border: 1px solid  rgba(0,0,0,.025);
 	box-shadow: 0px 2px 1px rgba(0,0,0,0.15);
 	text-decoration: none;
+	text-align: center;
 }
 .primaryNav li a:hover {
-	background-color: #0070f9;
+	background-color: #212121;
 }
 .primaryNav a:link:after,
 .primaryNav a:visited:after,
@@ -123,10 +145,10 @@ body {
 	padding-right: 0;
 }
 .primaryNav ul ul li a {
-	background-color: #28bf5e;
+	background-color: #00943e;
 }
 .primaryNav ul ul li a:hover {
-	background-color: #09a63e;
+	background-color: #212121;
 }
 .primaryNav ul ul li:first-child {
 	padding-top: 2em;
@@ -144,7 +166,7 @@ body {
 	padding-bottom: .3125em;
 }
 .primaryNav ul ul ul li a {
-	background-color: #ff9d00;
+	background-color: #c49300;
 	font-size: .75em;
 	padding: .75em;
 	width: 90%;
@@ -152,7 +174,7 @@ body {
 	margin-left: auto;
 }
 .primaryNav ul ul ul li a:hover {
-	background-color: #ff831b;
+	background-color: #212121;
 }
 .primaryNav ul ul ul li:first-child {
 	padding-top: 1em;
@@ -170,12 +192,12 @@ body {
 	padding-bottom: .3125em;
 }
 .primaryNav ul ul ul ul li a {
-	background-color: #de003a;
+	background-color: #5b5b5b;
 	padding: .75em ;
 	width: 80%;
 }
 .primaryNav ul ul ul ul li a:hover {
-	background-color: #c20035;
+	background-color: #212121;
 }
 .primaryNav ul ul ul ul li a:link:after,
 .primaryNav ul ul ul ul li a:visited:after {
@@ -195,10 +217,9 @@ body {
 	content: '';
 	position: absolute;
 	border-width: 0;
-	border-color: #e3e3e3;
+	border-color: #b0b0b0;
 	border-style: solid;
 	z-index: -1;
-	/* border-color: red; */
 }
 .primaryNav > ul > li:before {
 	height: 1.375em;
@@ -316,28 +337,6 @@ body {
 	font-weight: 600;
 	margin-top: .25em;
 }
-
-
-/* ------------------------------------------------------------
-	Drag to scroll
------------------------------------------------------------- */
-
-.items {
-	width:100vw;
-	overflow-x: scroll;
-	overflow-y: hidden;
-	user-select: none;
-	cursor: pointer;
-	transition: all 0.2s;
-	will-change: transform;
-	position: relative;
-	/* perspective: 500px; */
-  }
-  
-  .items.active {
-	cursor: grabbing;
-	cursor: -webkit-grabbing;
-  }
 
 
 /* ------------------------------------------------------------
