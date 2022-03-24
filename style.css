@@ -29,7 +29,6 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	box-sizing: border-box;
 }
 body {
-	font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
 	background: white;
 	color: #343a40;
 	font-size: 16px;
@@ -47,6 +46,10 @@ body {
 nav {
 	padding-bottom: 3em;
 }
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+  }
 
 /* ------------------------------------------------------------
 	Drag to scroll
@@ -106,21 +109,24 @@ nav {
 	margin-top: 3em;
 }
 .primaryNav li a {
+	color: #fff;
+    background-color: #730a53;
 	margin: 0;
 	padding: .875em .9375em .9375em .9375em;
 	display: block;
 	font-size: .9375em;
 	font-weight: bold;
-	color: white;
-	background: #2977ff;
 	text-shadow: 0 0 10px rgba(0,0,0,.1);
 	border: 1px solid  rgba(0,0,0,.025);
 	box-shadow: 0px 2px 1px rgba(0,0,0,0.15);
 	text-decoration: none;
 	text-align: center;
+	border-radius: 0.2rem;
 }
 .primaryNav li a:hover {
-	background-color: #212121;
+	color: #fff;
+    background-color: #ff5053;
+}
 }
 .primaryNav a:link:after,
 .primaryNav a:visited:after,
@@ -132,7 +138,6 @@ nav {
 	font-size: .75em;
 	margin-top: .25em;
 	word-wrap: break-word;
-	color: rgba(255,255,255,.75);
 }
 
 /* -------- Second Level --------- */
@@ -145,10 +150,15 @@ nav {
 	padding-right: 0;
 }
 .primaryNav ul ul li a {
-	background-color: #00943e;
+	color: #730a53;
+    background-color: #f2f2f2;
+    border-color: #730a53;
+	border-radius: 0.2rem;
 }
 .primaryNav ul ul li a:hover {
-	background-color: #212121;
+	color: #ff5053;
+    background-color: #f2f2f2;
+    border-color: #ff5053;
 }
 .primaryNav ul ul li:first-child {
 	padding-top: 2em;
@@ -166,7 +176,9 @@ nav {
 	padding-bottom: .3125em;
 }
 .primaryNav ul ul ul li a {
-	background-color: #c49300;
+	color: #ff8a8c;
+    background-color: #f2f2f2;
+    border-color: #ff8a8c;
 	font-size: .75em;
 	padding: .75em;
 	width: 90%;
@@ -174,7 +186,10 @@ nav {
 	margin-left: auto;
 }
 .primaryNav ul ul ul li a:hover {
-	background-color: #212121;
+	color: #ff5053;
+    background-color: #f2f2f2;
+    border-color: #ff5053;
+}
 }
 .primaryNav ul ul ul li:first-child {
 	padding-top: 1em;
@@ -192,12 +207,16 @@ nav {
 	padding-bottom: .3125em;
 }
 .primaryNav ul ul ul ul li a {
-	background-color: #5b5b5b;
+	color: #ff8a8c;
+    background-color: #f2f2f2;
+    border-color: #ff8a8c;
 	padding: .75em ;
 	width: 80%;
 }
 .primaryNav ul ul ul ul li a:hover {
-	background-color: #212121;
+	color: #ff5053;
+	background-color: #f2f2f2;
+    border-color: #ff5053;
 }
 .primaryNav ul ul ul ul li a:link:after,
 .primaryNav ul ul ul ul li a:visited:after {
